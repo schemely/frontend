@@ -1,7 +1,7 @@
-import auth from "./app/config/auth";
+import auth from './app/config/auth'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@sidebase/nuxt-auth"],
+  modules: ['@sidebase/nuxt-auth', 'nuxt-icons'],
   auth,
-});
+})
