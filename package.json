@@ -10,8 +10,24 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@sidebase/nuxt-auth": "^0.6.0-beta.4",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "eslint": "^8.47.0",
+    "nuxt": "^3.6.5",
+    "prettier": "^3.0.2"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@nuxtjs/eslint-config-typescript",
+      "prettier"
+    ]
   }
 }
