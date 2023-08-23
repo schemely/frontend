@@ -19,7 +19,8 @@
     "eslint": "^8.47.0",
     "nuxt": "^3.6.5",
     "prettier": "^3.0.2",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "vuetify-nuxt-module": "^0.5.7"
   },
   "prettier": {
     "printWidth": 100,
