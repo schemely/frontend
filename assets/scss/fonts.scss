@@ -1,0 +1,68 @@
+@mixin h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+@mixin h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+@mixin h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+}
+
+@mixin title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+}
+
+@mixin text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+@mixin caption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+@mixin context-menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+@mixin input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+@mixin button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin sign-in-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
