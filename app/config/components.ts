@@ -1,7 +1,8 @@
 import type { ComponentsOptions } from '@nuxt/schema'
 
 const pathPrefix = false
-const pattern = '*/ui/**/*.vue'
+const uiPattern = 'ui/**/*.vue'
+const pattern = '*/' + uiPattern
 
 const components: ComponentsOptions['dirs'] = [
   {
@@ -26,7 +27,7 @@ const components: ComponentsOptions['dirs'] = [
     path: '@/shared',
     prefix: 'UI',
     pathPrefix,
-    pattern,
+    pattern: uiPattern,
   },
 ]
 
