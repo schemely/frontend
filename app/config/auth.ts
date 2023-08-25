@@ -17,6 +17,9 @@ const auth: Partial<ModuleOptions> = {
     pages: {
       login: '/',
     },
+    token: {
+      maxAgeInSeconds: 60 * 60 * 24,
+    },
   },
 }
 
