@@ -25,6 +25,12 @@
 @mixin text {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  line-height: 130%;
+}
+
+@mixin default {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   line-height: 100%;
 }
 
