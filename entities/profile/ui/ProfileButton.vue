@@ -24,7 +24,7 @@ defineProps<{
   border-radius: 4px;
 
   &:hover {
-    background-color: $hover;
+    background-color: $hover__bg;
     cursor: pointer;
   }
 
@@ -52,7 +52,7 @@ defineProps<{
 
   &__login {
     margin-right: 4px;
-    @include default;
+    @include text-default;
     line-height: 150%;
     color: $text__text;
   }
