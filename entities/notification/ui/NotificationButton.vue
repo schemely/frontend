@@ -22,10 +22,10 @@ defineProps<{
   width: 32px;
   height: 32px;
   border-radius: 4px;
+  cursor: pointer;
 
   &:hover {
     background-color: $hover__bg;
-    cursor: pointer;
   }
 
   &__icon {

@@ -19,10 +19,10 @@ defineProps<{
   align-items: center;
   padding: 4px;
   border-radius: 4px;
+  cursor: pointer;
 
   &:hover {
     background-color: $hover__bg;
-    cursor: pointer;
   }
 
   &__avatar {
