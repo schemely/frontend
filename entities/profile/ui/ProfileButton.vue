@@ -1,9 +1,6 @@
 <template>
   <div class="profile-button">
-    <div class="profile-button__avatar-wrap">
-      <VImg v-if="avatar" class="profile-button__avatar" :src="avatar" />
-      <NuxtIcon v-else class="profile-button__default-avatar" name="account-circle-outline" />
-    </div>
+    <UIAvatar class="profile-button__avatar" :avatar="avatar" />
     <div class="profile-button__login">{{ login }}</div>
     <NuxtIcon class="profile-button__chevron" name="chevron-down" />
   </div>
@@ -28,26 +25,8 @@ defineProps<{
     cursor: pointer;
   }
 
-  &__avatar-wrap {
-    margin-right: 4px;
-    width: 24px;
-    height: 24px;
-  }
-
   &__avatar {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-  }
-
-  &__default-avatar {
-    font-size: 0;
-
-    & :deep(svg) {
-      width: 24px;
-      height: 24px;
-      color: $text__text;
-    }
+    margin-right: 4px;
   }
 
   &__login {
