@@ -10,9 +10,11 @@ const props = withDefaults(
   defineProps<{
     size?: number
     avatar?: string
+    color?: string
   }>(),
   {
     size: 24,
+    color: '#000000',
   }
 )
 
@@ -37,7 +39,7 @@ const sizeWithPx = computed(() => props.size + 'px')
     & :deep(svg) {
       width: v-bind(sizeWithPx);
       height: v-bind(sizeWithPx);
-      color: $black;
+      color: v-bind(color);
     }
   }
 }
