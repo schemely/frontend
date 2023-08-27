@@ -6,17 +6,12 @@
 </template>
 
 <script setup lang="ts">
-const props = withDefaults(
-  defineProps<{
-    size?: number
-    avatar?: string
-    color?: string
-  }>(),
-  {
-    size: 24,
-    color: '#000000',
-  }
-)
+import type { Avatar } from '@/shared/interfaces/Avatar'
+
+const props = withDefaults(defineProps<Avatar>(), {
+  size: 24,
+  color: '#000000',
+})
 
 const sizeWithPx = computed(() => props.size + 'px')
 </script>
