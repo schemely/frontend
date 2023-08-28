@@ -9,6 +9,9 @@ definePageMeta({
   layout: 'projects',
   middleware: 'auth',
 })
+
+const headerTitle = useMyHeaderTitle()
+headerTitle.value = 'My projects'
 </script>
 
 <style scoped lang="scss"></style>
