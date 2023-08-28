@@ -7,6 +7,9 @@
     <div class="my-nav-sidebar__search">
       <UISearchInput placeholder="Search projects" />
     </div>
+    <div class="my-nav-sidebar__menu">
+      <WidgetMyMenu />
+    </div>
   </VNavigationDrawer>
 </template>
 
@@ -26,6 +29,7 @@
 
   &__search {
     padding: 8px;
+    margin-bottom: 16px;
   }
 }
 </style>
