@@ -4,6 +4,9 @@
       <WidgetProfileButton />
       <WidgetNotificationButton />
     </div>
+    <div class="my-nav-sidebar__search">
+      <UISearchInput placeholder="Search projects" />
+    </div>
   </VNavigationDrawer>
 </template>
 
@@ -18,6 +21,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4px;
+    padding: 8px;
+  }
+
+  &__search {
     padding: 8px;
   }
 }
