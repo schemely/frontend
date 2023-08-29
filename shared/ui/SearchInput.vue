@@ -6,7 +6,11 @@
   </VTextField>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { SearchInput } from '@/shared/interfaces/SearchInput'
+
+defineProps<SearchInput>()
+</script>
 
 <style scoped lang="scss">
 .search-input {
