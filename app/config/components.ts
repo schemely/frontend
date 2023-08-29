@@ -2,7 +2,7 @@ import type { ComponentsOptions } from '@nuxt/schema'
 
 const pathPrefix = false
 const uiPattern = 'ui/**/*.vue'
-const pattern = '*/' + uiPattern
+const pattern = '**/' + uiPattern
 
 const components: ComponentsOptions['dirs'] = [
   {
