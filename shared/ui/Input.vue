@@ -3,7 +3,7 @@
     class="input"
     :class="[`input-size--${size}`]"
     variant="outlined"
-    hide-details
+    hide-details="auto"
   ></VTextField>
 </template>
 

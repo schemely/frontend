@@ -3,7 +3,7 @@
     class="textarea"
     :class="[`textarea-size--${size}`]"
     variant="outlined"
-    hide-details
+    hide-details="auto"
   ></VTextarea>
 </template>
 

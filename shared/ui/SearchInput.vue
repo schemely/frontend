@@ -1,5 +1,5 @@
 <template>
-  <VTextField class="search-input" variant="outlined" hide-details>
+  <VTextField class="search-input" variant="outlined" hide-details="auto">
     <template #prepend-inner>
       <NuxtIcon class="search-input__icon" name="magnify" />
     </template>
