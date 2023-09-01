@@ -17,19 +17,7 @@ withDefaults(defineProps<Input>(), {
 
 <style scoped lang="scss">
 .input {
-  &__icon {
-    width: 16px;
-    height: 16px;
-    font-size: 0;
-
-    :deep(svg) {
-      width: 16px;
-      height: 16px;
-      color: $text__text--lighten-2;
-    }
-  }
-
-  &:deep(input.v-field__input) {
+  :deep(input.v-field__input) {
     --v-input-control-height: 32px;
     --v-field-input-padding-top: 3px;
     --v-field-input-padding-bottom: 3px;
@@ -103,7 +91,7 @@ withDefaults(defineProps<Input>(), {
     }
   }
 
-  &:deep(.v-field) {
+  :deep(.v-field) {
     --v-disabled-opacity: 1;
     --v-field-padding-start: 12px;
     --v-field-padding-end: 12px;
@@ -111,26 +99,30 @@ withDefaults(defineProps<Input>(), {
     border-radius: 4px;
   }
 
-  &:deep(.v-field--prepended) {
+  :deep(.v-field--prepended) {
     padding-inline-start: 10px;
   }
 
-  &:deep(.v-field__outline) {
+  :deep(.v-field__outline) {
     --v-field-border-width: 1px;
     --v-field-border-opacity: 1;
     color: $border-form;
   }
 
-  &:deep(.v-field--focused .v-field__outline) {
+  :deep(.v-field--disabled .v-field__outline) {
+    color: $disabled;
+  }
+
+  :deep(.v-field--focused .v-field__outline) {
     --v-field-border-width: 2px;
     color: $primary__primary;
   }
 
-  &:deep(.v-field.v-field--focused:hover .v-field__outline) {
+  :deep(.v-field.v-field--focused:hover .v-field__outline) {
     --v-field-border-width: 2px;
   }
 
-  &:deep(.v-field:hover .v-field__outline) {
+  :deep(.v-field:hover .v-field__outline) {
     --v-field-border-width: 1px;
   }
 }
