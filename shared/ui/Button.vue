@@ -19,7 +19,7 @@ withDefaults(defineProps<Button>(), {
 .button {
   padding: 0 20px;
   border-radius: 6px;
-  @include button;
+  @include form__button;
   text-transform: none;
   text-indent: initial;
   letter-spacing: initial;

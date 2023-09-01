@@ -32,7 +32,7 @@ defineProps<SearchInput>()
     --v-field-input-padding-bottom: 3px;
     --v-input-chips-margin-top: 0px;
 
-    @include input;
+    @include form__editor-input;
     color: $text__text--lighten-1;
 
     &::placeholder {
