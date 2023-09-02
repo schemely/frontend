@@ -6,8 +6,7 @@
     :ripple="false"
     @click="toggle = !toggle"
   >
-    <NuxtIcon v-show="modelValue" class="toggle-button__icon" :name="nuxtIconTrue" />
-    <NuxtIcon v-show="!modelValue" class="toggle-button__icon" :name="nuxtIconFalse" />
+    <NuxtIcon class="toggle-button__icon" :name="modelValue ? nuxtIconTrue : nuxtIconFalse" />
   </VBtn>
 </template>
 
