@@ -104,15 +104,15 @@ withDefaults(defineProps<Radio>(), {
     opacity: 1;
   }
 
-  :deep(.v-selection-control i) {
+  &.v-selection-control :deep(.v-icon) {
     color: $border-form;
   }
 
-  :deep(.v-selection-control.v-selection-control--dirty i) {
+  &.v-selection-control.v-selection-control--dirty :deep(.v-icon) {
     color: $primary__primary;
   }
 
-  :deep(.v-selection-control) {
+  &.v-selection-control {
     min-height: initial;
   }
 }

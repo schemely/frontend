@@ -53,8 +53,8 @@ withDefaults(defineProps<Checkbox>(), {
     }
 
     :deep(.v-selection-control__wrapper) {
-      --v-selection-control-size: 12px;
-      margin-right: 8px;
+      --v-selection-control-size: 20px;
+      margin-right: 0px;
     }
   }
 
@@ -76,8 +76,8 @@ withDefaults(defineProps<Checkbox>(), {
     }
 
     :deep(.v-selection-control__wrapper) {
-      --v-selection-control-size: 14px;
-      margin-right: 10px;
+      --v-selection-control-size: 22px;
+      margin-right: 2px;
     }
   }
 
@@ -99,8 +99,8 @@ withDefaults(defineProps<Checkbox>(), {
     }
 
     :deep(.v-selection-control__wrapper) {
-      --v-selection-control-size: 16px;
-      margin-right: 12px;
+      --v-selection-control-size: 24px;
+      margin-right: 4px;
     }
   }
 
