@@ -1,9 +1,5 @@
 import type { ModuleOptions } from 'vuetify-nuxt-module'
 
-const vuetify: ModuleOptions = {
-  vuetifyOptions: {
-    icons: false,
-  },
-}
+const vuetify: ModuleOptions = {}
 
 export default vuetify
