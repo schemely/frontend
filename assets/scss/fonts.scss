@@ -84,9 +84,23 @@
   line-height: 100%;
 }
 
-@mixin form__button {
+@mixin form__button--lg {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin form__button--md {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin form__button--sm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
   font-weight: 400;
   line-height: 100%;
 }

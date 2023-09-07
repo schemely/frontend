@@ -19,7 +19,7 @@ withDefaults(defineProps<Button>(), {
 .button {
   padding: 0 20px;
   border-radius: 6px;
-  @include form__button;
+  @include form__button--md;
   text-transform: none;
   text-indent: initial;
   letter-spacing: initial;
@@ -82,14 +82,17 @@ withDefaults(defineProps<Button>(), {
 
   &.v-btn--size-small {
     --v-btn-height: 28px;
+    @include form__button--sm;
   }
 
   &.v-btn--size-default {
     --v-btn-height: 32px;
+    @include form__button--md;
   }
 
   &.v-btn--size-large {
     --v-btn-height: 36px;
+    @include form__button--lg;
   }
 
   &.v-btn--disabled {
