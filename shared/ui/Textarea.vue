@@ -104,5 +104,16 @@ withDefaults(defineProps<Textarea>(), {
       }
     }
   }
+
+  :deep(.v-input__details) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+
+  :deep(.v-counter) {
+    @include text-default;
+    font-size: 12px;
+    color: $text__text--lighten-3;
+  }
 }
 </style>
