@@ -1,11 +1,12 @@
 <template>
   <VAppBar class="my-header" height="48" absolute flat>
-    <div class="my-header__title">{{ headerTitle }}</div>
+    <UIBackLink v-if="myHeader.link" :to="myHeader.link.to">{{ myHeader.link.text }}</UIBackLink>
+    <div v-else-if="myHeader.title" class="my-header__title">{{ myHeader.title }}</div>
   </VAppBar>
 </template>
 
 <script setup lang="ts">
-const headerTitle = useMyHeaderTitle()
+const myHeader = useMyHeader()
 </script>
 
 <style scoped lang="scss">
