@@ -7,7 +7,13 @@ import vuetify from './app/config/vuetify'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@/assets/scss/main.scss'],
-  modules: ['vuetify-nuxt-module', '@sidebase/nuxt-auth', 'nuxt-icons'],
+  modules: [
+    '@pinia/nuxt',
+    '@pinia-orm/nuxt',
+    'vuetify-nuxt-module',
+    '@sidebase/nuxt-auth',
+    'nuxt-icons',
+  ],
   components,
   imports: {
     dirs: [...composables],

@@ -9,7 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia-orm/nuxt": "^1.6.7",
+    "@pinia/nuxt": "^0.4.11",
     "nuxt-icons": "^3.2.1",
+    "pinia": "^2.1.6",
+    "pinia-orm": "^1.6.7",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
@@ -22,6 +26,9 @@
     "prettier": "^3.0.2",
     "sass": "^1.66.1",
     "vuetify-nuxt-module": "^0.5.7"
+  },
+  "overrides": {
+    "vue": "latest"
   },
   "prettier": {
     "printWidth": 100,
