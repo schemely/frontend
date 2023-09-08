@@ -9,7 +9,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt-icons": "^3.2.1"
+    "nuxt-icons": "^3.2.1",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
