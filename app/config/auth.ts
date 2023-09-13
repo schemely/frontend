@@ -1,7 +1,7 @@
 import type { ModuleOptions } from '@sidebase/nuxt-auth/dist/runtime/types'
 
 const auth: Partial<ModuleOptions> = {
-  baseURL: process.env.AUTH_BASE_URL,
+  baseURL: process.env.BASE_URL + '/auth',
   session: {
     enableRefreshPeriodically: false,
     enableRefreshOnWindowFocus: false,
