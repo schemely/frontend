@@ -115,5 +115,9 @@ withDefaults(defineProps<Textarea>(), {
     font-size: 12px;
     color: $text__text--lighten-3;
   }
+
+  :deep(.v-field--error:not(.v-field--disabled) .v-field__outline) {
+    color: $error;
+  }
 }
 </style>

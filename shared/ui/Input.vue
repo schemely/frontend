@@ -125,5 +125,9 @@ withDefaults(defineProps<Input>(), {
   :deep(.v-field:hover .v-field__outline) {
     --v-field-border-width: 1px;
   }
+
+  :deep(.v-field--error:not(.v-field--disabled) .v-field__outline) {
+    color: $error;
+  }
 }
 </style>
