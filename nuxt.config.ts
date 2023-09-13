@@ -6,6 +6,11 @@ import vuetify from './app/config/vuetify'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL,
+    },
+  },
   css: ['@/assets/scss/main.scss'],
   modules: [
     '@pinia/nuxt',
@@ -17,6 +22,12 @@ export default defineNuxtConfig({
   components,
   imports: {
     dirs: [...composables],
+    presets: [
+      {
+        from: '@vuelidate/core',
+        imports: ['useVuelidate'],
+      },
+    ],
   },
   vite,
   auth,
