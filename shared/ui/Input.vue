@@ -127,7 +127,7 @@ withDefaults(defineProps<Input>(), {
   }
 
   :deep(.v-field--error:not(.v-field--disabled) .v-field__outline) {
-    color: $error;
+    color: $error__error;
   }
 }
 </style>
