@@ -1,0 +1,122 @@
+@mixin font-normal {
+  line-height: 100%;
+  font-weight: normal;
+  letter-spacing: initial;
+}
+
+@mixin h1 {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+@mixin h2 {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+@mixin h3 {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+@mixin title {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+@mixin text {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+@mixin text-default {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+@mixin caption {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+@mixin context-menu {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@mixin menu {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+@mixin form__input-label {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@mixin form__input-error {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+@mixin form__input--lg {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+@mixin form__input--md {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+@mixin form__input--sm {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+@mixin form__editor-input {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+@mixin form__button--lg {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+@mixin form__button--md {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+@mixin form__button--sm {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+@mixin form__sign-in-button {
+  @include font-normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
