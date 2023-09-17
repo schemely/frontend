@@ -1,5 +1,6 @@
 {
   "name": "schemely",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -8,9 +9,43 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "@pinia-orm/nuxt": "^1.6.7",
+    "@pinia/nuxt": "^0.4.11",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "lodash-es": "^4.17.21",
+    "nuxt-icons": "^3.2.1",
+    "pinia": "^2.1.6",
+    "pinia-orm": "^1.6.7",
+    "slugify": "^1.6.6"
+  },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.4",
+    "@types/lodash-es": "^4.17.9",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "eslint": "^8.47.0",
+    "nuxt": "^3.6.5",
+    "prettier": "^3.0.2",
+    "sass": "^1.66.1",
+    "vuetify-nuxt-module": "^0.5.7"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@nuxtjs/eslint-config-typescript",
+      "prettier"
+    ]
   }
 }
