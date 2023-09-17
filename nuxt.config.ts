@@ -29,6 +29,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+  pinia: {
+    autoImports: ['defineStore', 'storeToRefs'],
+  },
   vite,
   auth,
   vuetify,
