@@ -3,6 +3,8 @@
     <VMain>
       <slot />
     </VMain>
+
+    <WidgetSnackbar />
   </VApp>
 </template>
 
