@@ -5,10 +5,8 @@
 </template>
 
 <script setup lang="ts">
-const router = useRouter()
-
-function projectRedirect() {
-  router.push('/my/new-project')
+async function projectRedirect() {
+  await navigateTo('/my/new-project')
 }
 </script>
 
