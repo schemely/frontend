@@ -1,14 +1,17 @@
 <template>
   <div>
     <h1>Index page</h1>
-    <nuxt-icon class="google-logo" name="google-logo" filled />
-    <div>
-      <a href="http://localhost:3333/api/auth/github/redirect"> Sign in with Github </a>
-    </div>
-    <div><NuxtLink to="/profile">Profile</NuxtLink></div>
+    <NuxtIcon class="google-logo" name="google-logo" filled />
+
     <div>{{ status }}</div>
+
     <div v-if="isLoggedIn">
+      <div><NuxtLink to="/my/projects">My Projects</NuxtLink></div>
+      <div><NuxtLink to="/profile">Profile</NuxtLink></div>
       <button @click="signOut({ redirect: false })">Sign out</button>
+    </div>
+    <div v-else>
+      <a href="http://localhost:3333/api/auth/github/redirect"> Sign in with Github </a>
     </div>
   </div>
 </template>
