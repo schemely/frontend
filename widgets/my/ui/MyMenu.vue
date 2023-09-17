@@ -3,30 +3,10 @@
 </template>
 
 <script setup lang="ts">
-import type { MyMenuItem } from '@/entities/my/interfaces/MyMenu'
+import { useMyMenuStore } from '@/entities/my/stores/menu'
 
-const menu: MyMenuItem[] = [
-  {
-    text: 'Recents',
-    icon: 'clock-outline',
-    link: '/my/recents',
-  },
-  {
-    text: 'My projects',
-    icon: 'file-outline',
-    link: '/my/projects',
-  },
-  {
-    text: 'Shared projects',
-    icon: 'share-variant-outline',
-    link: '/my/shared',
-  },
-  {
-    text: 'Favorite projects',
-    icon: 'star-outline',
-    link: '/my/favorite',
-  },
-]
+const myMenuStore = useMyMenuStore()
+const { menu } = storeToRefs(myMenuStore)
 </script>
 
 <style scoped lang="scss"></style>
