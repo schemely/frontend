@@ -2,7 +2,6 @@
   <div>
     <h1>Index page</h1>
     <NuxtIcon class="google-logo" name="google-logo" filled />
-    <div><NuxtLink to="/no">Test</NuxtLink></div>
 
     <div>{{ status }}</div>
 
