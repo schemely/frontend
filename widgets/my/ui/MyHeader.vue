@@ -1,12 +1,15 @@
 <template>
   <VAppBar class="my-header" height="48" absolute flat>
-    <UIBackLink v-if="myHeader.link" :to="myHeader.link.to">{{ myHeader.link.text }}</UIBackLink>
-    <div v-else-if="myHeader.title" class="my-header__title">{{ myHeader.title }}</div>
+    <UIBackLink v-if="link.to" :to="link.to">{{ link.text }}</UIBackLink>
+    <div v-if="title" class="my-header__title">{{ title }}</div>
   </VAppBar>
 </template>
 
 <script setup lang="ts">
-const myHeader = useMyHeader()
+import { useMyHeaderStore } from '@/entities/my/stores/header'
+
+const myHeaderStore = useMyHeaderStore()
+const { title, link } = storeToRefs(myHeaderStore)
 </script>
 
 <style scoped lang="scss">
